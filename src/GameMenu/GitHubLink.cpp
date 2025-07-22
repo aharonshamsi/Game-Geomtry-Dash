@@ -11,5 +11,5 @@ GitHubLink::GitHubLink(const sf::Vector2f& location, const sf::Vector2f& wantedS
 MenuAction GitHubLink::handleClick(Info& info, sf::RenderWindow& window)
 {
 	ShellExecuteA(nullptr, "open", m_url.c_str(), nullptr, nullptr, SW_SHOWNORMAL);
-	return MenuAction::None;
+	return MenuAction::None; 
 }
